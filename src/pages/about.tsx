@@ -61,9 +61,9 @@ export default function About() {
             <h2>History</h2>
 
             <p>
-              First time I started to code is around early 2018, where I use
-              Javascript to make Discord bots. Then around 2021, I started to
-              shift towards web development and{' '}
+              First time I started to code is around early 2021, where I use
+              C++ to make simple mathematics programmes. Then around later 2021, I started to
+              shift towards frontend web development and{' '}
               <a
                 href="https://www.typescriptlang.org/"
                 target="_blank"
