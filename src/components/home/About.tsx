@@ -166,7 +166,7 @@ export default function About() {
                   style={{ transform: 'translateX(100%)' }}
                 >
                   <Emoji code="1f1ee-1f1e9" className="mr-5" />
-                  FROM INDONESIA
+                  FROM VIETNAM
                 </h2>
               </section>
             </section>

@@ -52,7 +52,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
 
           <section className="grid place-items-center select-none">
             <a
-              href="https://github.com/edqe14"
+              href="https://github.com/larvenejafemcoder"
               target="_blank"
               rel="noreferrer"
               className="animate-hover p-8 w-52 md:w-72 rounded-xl text-zinc-800 flex-col flex justify-center items-center aspect-[10/16] bg-purple-100 mb-16 will-change-transform"

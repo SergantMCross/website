@@ -87,9 +87,9 @@ export default function Hero() {
               // }}
             >
               <span className="text-lg tracking-tighter opacity-80 absolute -bottom-6 right-1">
-                <span className="opacity-75">a.k.a</span> Edqe14
+                <span className="opacity-75">a.k.a</span> Sergant Cross
               </span>
-              Yuka
+              Cross
             </span>
             <span style={{ opacity: 0 }}>.</span>
             <br />
