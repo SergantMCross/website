@@ -5,6 +5,7 @@ import { Link } from '@phosphor-icons/react';
 
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { AnchorHTMLAttributes, DetailedHTMLProps, FC } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Twemoji from './Twemoji';
@@ -26,7 +27,7 @@ const LinkWrap = ({ ...props }: AnchorProps) => (
   <a target="_blank" rel="noreferrer" {...props} />
 );
 
-const wrap = (el: JSX.Element, { href, ...props }: AnchorProps) => {
+const wrap = (el: React.ReactElement, { href, ...props }: AnchorProps) => {
   if (!href) {
     return el;
   }

@@ -53,8 +53,8 @@ export default function About() {
 
           <section className="text-zinc-100 text-lg prose prose-sm prose-pink prose-img:rounded-xl prose-invert">
             <p>
-              Hey there! My full name is <b>Sergant Michael Cross</b>. You can find me
-              online with my username <b>Sergant Cross</b> or <b>Crosser</b>. I&apos;m a
+              Hey there! My full name is <b>Sergant Michael <span className="text-orange-600">Cross</span></b>. You can find me
+              online with my username <b>Sergant <span className="text-orange-600">Cross</span></b> or <b>Crosser</b>. I&apos;m a
               SCVN's Head 2nd Commander, RedStar Division.
             </p>
 

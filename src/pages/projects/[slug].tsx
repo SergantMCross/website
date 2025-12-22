@@ -89,12 +89,12 @@ export default function Project({ project }: { project: Project }) {
               {project.name}
             </a>
 
-            {typeof project.year === 'number' && (
+            {typeof project.yearNumber === 'number' && (
               <section className="flex gap-3 justify-end">
                 <p className="text-3xl text-light-gold">•</p>
 
                 <p className="text-2xl font-medium text-zinc-300">
-                  {project.year}
+                  {project.yearNumber}
                 </p>
               </section>
             )}
