@@ -26,7 +26,7 @@ export default function Footer() {
             className="text-light-gold text-2xl md:text-3xl flex-shrink-0"
           />
           <a
-            href="mailto:hello@edqe.me"
+            href="mailto:https://larvenejafemabout.netlify.app/"
             className="text-2xl sm:text-3xl text-washed-purple"
           >
             https://larvenejafemabout.netlify.app/
