@@ -29,18 +29,18 @@ export default function Footer() {
             href="mailto:hello@edqe.me"
             className="text-2xl sm:text-3xl text-washed-purple"
           >
-            hello@edqe.me
+            https://larvenejafemabout.netlify.app/
           </a>
         </section>
       </section>
 
       <section className="flex justify-between gap-4 itmes-end">
         <p className="text-sm sm:text-base text-zinc-500 bg-blend-difference">
-          &copy; {new Date().getFullYear()} Joshua T. All rights reserved.
+          &copy; {new Date().getFullYear()} Michael Cross. All rights reserved.
         </p>
 
         <section className="text-3xl flex gap-4 items-center text-zinc-200">
-          <a href="https://github.com/edqe14" target="_blank" rel="noreferrer">
+          <a href="https://github.com/larvenejafemcoder" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
 
