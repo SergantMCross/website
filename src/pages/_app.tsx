@@ -2,14 +2,14 @@ import '@/styles/globals.css';
 import 'mouse-follower/dist/mouse-follower.min.css';
 import type { AppProps } from 'next/app';
 
-import { Inter, Playfair_Display as Playfair } from '@next/font/google';
+import { Inter, Playfair_Display as Playfair } from 'next/font/google';
 import cn from 'classnames';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 import useLenis from '@/hooks/useLenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { raf } from '@studio-freight/tempus';
+import tempus from 'tempus';
 import MouseFollower from 'mouse-follower';
 
 import Burger from '@/components/Burger';
@@ -54,9 +54,9 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // ScrollTrigger.defaults({ markers: process.env.NODE_ENV === 'development' });
 
-    const unsub = raf.add((time: number) => {
+    const unsub = tempus.add((time: number) => {
       gsap.updateRoot(time / 1000);
-    }, 0);
+    }, { priority: 0 });
 
     return unsub;
   }, []);
@@ -69,10 +69,9 @@ export default function App({ Component, pageProps }: AppProps) {
     ScrollTrigger.refresh();
     useLenis.setState({ instance: lenis });
 
-    const unsub = raf.add((time: number) => lenis.raf(time), 0);
+    const unsub = tempus.add((time: number) => lenis.raf(time), { priority: 0 });
 
     return () => {
-      unsub();
       lenis.destroy();
       useLenis.setState({ instance: null });
     };

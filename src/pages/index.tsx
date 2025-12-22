@@ -62,7 +62,7 @@ export default function Home({ projects }: { projects: Project[] }) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const projects = allProjects
-    .sort((a, b) => (b?.year ?? 0) - (a?.year ?? 0))
+    .sort((a, b) => (b?.yearNumber ?? 0) - (a?.yearNumber ?? 0))
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     .map(({ body, ...rest }) => rest);
 

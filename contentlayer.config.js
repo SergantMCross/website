@@ -59,12 +59,18 @@ export const Project = defineDocumentType(() => ({
       required: true,
     },
     year: {
-      type: 'number',
+      type: 'string',
       description: 'The year the project was created',
     },
     url: {
       type: 'string',
       description: 'The URL to the project',
+    },
+  },
+  computedFields: {
+    yearNumber: {
+      type: 'number',
+      resolve: (project) => parseInt(project.year.trim()),
     },
   },
 }));
