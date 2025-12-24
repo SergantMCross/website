@@ -36,9 +36,9 @@ MouseFollower.registerGSAP(gsap);
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.remove(gsap.updateRoot);
 
-if (typeof window !== 'undefined') {
+if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
   // checks that we are client-side
-  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
+  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host:
       process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
     loaded: (hog) => {
